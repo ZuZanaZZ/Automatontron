@@ -1,0 +1,147 @@
+{
+    "section_0": [
+        {
+            "level": 1,
+            "initial_states": [0],
+            "accepting_states": [1],
+            "transition_dict": {"0":[[["z"], 1]]},
+            "language": "Automaton should recognise the language consisting only of string \"z\". L = {z}.",
+            "text_lines": [
+                "This is level 1 in the deterministic section. It looks like you're trying to play the game. Press enter for useful tips!",
+                "The goal of this game is to pass all the levels, and become the master of automata! To pass a level, build a robot that can read the given language. This robot is called automaton.",
+                "The language that your automaton should recognise can be seen at the bottom of the screen. Language is made up of strings, which are a sequence of symbols.",
+                "Try creating an automaton! Or press enter for more useful tips!",
+                "To make automaton you need circles and arrows. Circles represent the states of the automaton. Arrows represent the transitions between the states. Automaton goes between states upon reading a symbol.",
+                "Try getting a circle from the circle generator (left) at the bottom of the screen. Press spacebar to pick up the circle. Press spacebar again to put the circle down.",
+                "Try moving it around! Circle can be deleted on the circle destroyer (right) at the bottom of the screen. But only if an arrow isn't attached to it!",
+                "To create an arrow, stand on circle and press the key \"a\".",
+                "Then get another circle. To end creating the arrow and attaching it to the circle press the key \"a\" again. Now you have created a transition between the two circles!",
+                "The arrow can be deleted by pressing the key \"d\". You can add a symbol to arrow by pressing the keys \"z\", \"x\", \"c\", \"v\".",
+                "You can tell the automaton where to start or end the computation by marking the circle. Circles have variants: base, initial, accepting and initial accepting. Cycle through the variants of the circle to add states to the automaton by pressing the key \"s\".",
+                "The initial state is shown as orange. The accepting state has 2 outlines. Automaton accepts the string, if it goes from initial to accepting state. It recognises a language, if it accepts all the strings in the language.",
+                "To check, if the automaton recognises the language, stand on the button at the bottom of the screen. The button starts the automaton's computation",
+                "Good luck!"
+            ]
+        },
+        {
+            "level": 2,
+            "initial_states": [0],
+            "accepting_states": [0],
+            "transition_dict": {"0":[[["z"], 0]]},
+            "language": "L = z*",
+            "text_lines": [
+                "This is level 2 in the deterministic section. It looks like you're trying to play the game. Press enter for useful tips!",
+                "The \"*\" is called Kleene closure. It means that the symbol repeats. From 0 occurrences to infinity! So: ε, z, zz, zzz... To make this automaton, use the loop arrow. It makes the automaton remain in the same state.",
+                "You can make the circle to be a, initial and accepting variant at the same time. It's orange with another outline.",
+                "Good luck!"
+            ]
+        },
+        {
+            "level": 3,
+            "initial_states": [0],
+            "accepting_states": [2],
+            "transition_dict": {"0": [[["x"], 0], [["z"], 1]],
+                                "1": [[["z"], 1], [["x"], 2]],
+                                "2": [[["z", "x"], 2]]},
+            "language": "L = {s ∈ {z, x}*| s contains substring zx}.",
+            "text_lines": [
+                "This is level 3 in the deterministic section. It looks like you're trying to play the game. Press enter for useful tips!",
+                "This language has a substring. The substring is a sequence of symbols, that must be present in all of the strings in this language. For example zx, or zzzzzzzzzzzzzxzzzzzzzzzzzzzz.", 
+                "Good luck!"
+            ]
+        },
+        {
+            "level": 4,
+            "initial_states": [0],
+            "accepting_states": [4, 5],
+            "transition_dict": {"0": [[["c"], 0], [["v"], 1], [["z"], 2]],
+                                "1": [[["v"], 1], [["z"], 2]],
+                                "2": [[["x"], 3]],
+                                "3": [[["z"], 4]],
+                                "4": [[["c"], 4], [["v"], 5]],
+                                "5": [[["v"], 5]]},
+            "language": "L = c*v* zxz c*v*",
+            "text_lines": [
+                "This is level 4 in the deterministic section. It looks like you're trying to play the game. Press enter for useful tips!",
+                "When all strings in a language share the same beginning, that shared part is called a prefix. When they share the same ending, it's called a suffix.",
+                "Now you know the basics! Put your knowledge to the test and make this automaton.",
+                "Good luck!"
+            ]
+        }
+    ],
+    "section_1": [
+        {
+            "level": 1,
+            "initial_states": [0],
+            "accepting_states": [2],
+            "transition_dict": {"0": [[["z"], 1]],
+                                "1": [[["x", "c"], 2]]},
+            "language": "L = {zx, zc}",
+            "text_lines": [
+                "This is level 1 in the nondeterministic section. It looks like you're trying to play the game. Press enter for useful tips!",
+                "Until now you have been building deterministic automata. They could only take one path, similarly to following a recipe. There were no choices to be made.",
+                "Now, try building a nondeterministic automaton! It can \"guess\" the correct path. If two transitions share the same symbol from one state, it knows where to go.",
+                "Good luck!"
+            ]
+        },
+        {
+            "level": 2,
+            "initial_states": [0],
+            "accepting_states": [1, 3, 4],
+            "transition_dict": {"0": [[["c"], 1], [["z"], 2]],
+                                "2": [[["x"], 3]],
+                                "3": [[["c"], 4]]},
+            "language": "L = {c, zx, zxc}",
+            "text_lines": [
+                "This is level 2 in the nondeterministic section. It looks like you're trying to play the game. Press enter for useful tips!",
+                "Nondeterministic automata can have more than one initial state. You can also make every string that should be accepted into one branch of automaton.",
+                "Good luck!"
+            ]
+        },
+        {
+            "level": 3,
+            "initial_states": [0],
+            "accepting_states": [0, 3, 6],
+            "transition_dict": {"0": [[["z"], 1]],
+                                "1": [[["x"], 2]],
+                                "2": [[["x"], 3], [["c"], 6]],
+                                "3": [[["z"], 4]],
+                                "4": [[["x"], 5]],
+                                "5": [[["x"], 3]],
+                                "6": [[["z"], 7]],
+                                "7": [[["x"], 8]],
+                                "8": [[["c"], 6]]},
+            "language": "L₁ = (zxx)*, L₂ = (zxc)*, L = L₁ ∪  L₂",
+            "text_lines": [
+                "This is level 3 in the nondeterministic section. It looks like you're trying to play the game. Press enter for useful tips!",
+                "The Kleene closure can be used on more than one symbol. The whole expression must be repeated, so the automaton cannot stop partway through the expression.",
+                "Since languages are sets, we can do set operations on them. For example union. Language L must contain the strings from both L₁ and L₂.",
+                "Good luck!"
+            ]
+        },
+        {
+            "level": 4,
+            "initial_states": [0],
+            "accepting_states": [2],
+            "transition_dict": {"0": [[["z"], 1]],
+                                "1": [[["x", "c"], 2]],
+                                "2": [[["v"], 3]],
+                                "3": [[["c"], 4]],
+                                "4": [[["x"], 2]]},
+            "language": "L = (zx|zc)(vcx)*",
+            "text_lines": [
+                "This is level 4 in the nondeterministic section. It looks like you're trying to play the game. Press enter for useful tips!",
+                "The vertical bar separates alternatives. It means that the string can begin with either \"zx\" or \"zc\".",
+                "Now you know everything! There are no more useful tips. Good luck!"
+            ]
+        },
+        {
+            "level": 5,
+            "initial_states": [],
+            "accepting_states": [],
+            "transition_dict": {},
+            "language": "",
+            "text_lines": [""]
+        }
+    ]
+}
