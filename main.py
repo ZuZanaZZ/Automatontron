@@ -1,4 +1,4 @@
-from pygame_setup import pygame
+from config.pygame_setup import pygame
 import game
 
 

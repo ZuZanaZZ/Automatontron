@@ -1,7 +1,7 @@
 import pygame
 
 from draw_text import DrawText
-from global_vars import screen_height, screen_width, font, font_bold, color_dark, color_light
+from config.global_vars import screen_height, screen_width, font, font_bold, color_dark, color_light
 from menu_variant import MainVariant, LevelVariant, ResolutionVariant, AudioVariant
 # basis for menu from: https://www.youtube.com/watch?v=a5JWrd7Y_14&list=PLVFWKkB2K-TnsGDz7xrN27IpCU5I1bery
 

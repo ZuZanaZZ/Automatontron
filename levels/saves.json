@@ -1,0 +1,19 @@
+{
+    "section_0": [
+        {
+            "level_1": true,
+            "level_2": false,
+            "level_3": false,
+            "level_4": false
+        }
+    ],
+    "section_1": [
+        {
+            "level_1": false,
+            "level_2": false,
+            "level_3": false,
+            "level_4": false,
+            "level_5": false
+        }
+    ]
+}

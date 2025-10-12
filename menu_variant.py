@@ -1,7 +1,7 @@
 import pygame
 
 from abc import ABC, abstractmethod
-from file_handler import FileHandler
+from levels.file_handler import FileHandler
 
 
 class MenuVariant(ABC):

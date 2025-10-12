@@ -1,14 +1,14 @@
 import pygame
 from automaton import Automaton
-from button import Button
-from circle_destroyer import CircleDestroyer
-from circle_generator import CircleGenerator
-from environment import Environment
-from file_handler import FileHandler
-from global_vars import screen_width, screen_height
-from helper_dialogue import HelperDialogue
+from objects.button import Button
+from objects.circle_destroyer import CircleDestroyer
+from objects.circle_generator import CircleGenerator
+from objects.environment import Environment
+from levels.file_handler import FileHandler
+from config.global_vars import screen_width, screen_height
+from objects.helper_dialogue import HelperDialogue
 from menu import Menu
-from player import Player
+from objects.player import Player
 
 
 class Game():
