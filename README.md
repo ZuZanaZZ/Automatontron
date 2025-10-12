@@ -1,8 +1,10 @@
 # Introduction
 
 ## How to start:
-- to play the game, go to the "main.py" file, and run it
-- or double-click on the Automatontron.exe file!
+- First download the ZIP file from GitHub by clicking on the < > Code button.
+- Unzip and extract the files by right clicking on the downloaded file and selecting "Extract All..." and selecting your desired destination.
+- If you do have Pygame installed, you can play the game by opening the downloaded folder and going to the "main.py" file, and running it in the IDE of your choice.
+- If you don't have Pygame, or you don't want to install it, you can double-click on the Automatontron.exe file!
 
 ## Controls:
 - ARROW keys -> movement
@@ -22,7 +24,6 @@
 - with your acquired knowledge, complete every level and become the master of automata!
 
 ## Good luck and happy gaming! :D
-
 
 # Showcase of Automatontron
 - Automatontron is a logic game inspired by the Human Resource Machine game. In Automatontron, the player is tasked with constructing an automaton, that recognises the language of the given level, and this progressing in the game.
@@ -73,9 +74,9 @@ After starting the game, the main menu is displayed. The player can choose from 
 - To remove the arrow, "d" key can be pressed. It removes the arrow the player character is standing on.
 - The keys "z", "x", "c" and "v" add symbol to the arrow the player is standing on, which can be seen on the figure below.
 
-<img width="363" height="81.95" alt="circle_variants" src="https://github.com/user-attachments/assets/673fd311-aaef-4da0-a977-7830c3e9a277" />
-
 <img width="184" height="148" alt="arrow_variants_with_symbols" src="https://github.com/user-attachments/assets/fa39e5cf-8e30-4efc-8853-f22c8b62e9ea" />
+
+<img width="363" height="81.95" alt="circle_variants" src="https://github.com/user-attachments/assets/673fd311-aaef-4da0-a977-7830c3e9a277" />
 
 ## Automaton responses
 - During the levels, the player has the opportunity to be informed by the assistant about useful tips regarding new concepts of the given level. The assistant also informs the player whether his automaton accepts the language of the level, or if the automaton has a problem and needs to be fixed. For example, it lists the string that differs between the language of his automaton and the language of the level, as can be seen below.
