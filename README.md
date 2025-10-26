@@ -28,7 +28,7 @@ Automatontron is a logic game inspired by the Human Resource Machine game. In Au
 ## Menu
 The game features a menu system.
 ### Main menu
-After starting the game, the main menu is displayed. The player can choose from the options for the 'Levels', 'Resolution', and 'Audio' menus. There is also an option to 'Quit Game'.
+After starting the game, the main menu is displayed. The player can choose from the options for the 'levels', 'resolution', and 'audio' menus. There is also an option to 'Quit Game'.
 
 <img width="630" height="350.4" alt="main_menu" src="https://github.com/user-attachments/assets/b65c90eb-6d3a-4ad8-a520-bda24b0bdaa8" />
 
