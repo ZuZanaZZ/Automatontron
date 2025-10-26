@@ -54,7 +54,7 @@ After starting the game, the main menu is displayed. The player can choose from 
 - Playing surface:
     - The background on which the game takes place.
 - Helper with a text bubble:
-    - A character that accompanies the player during level solving. It provides useful hints, informs the player about the correctness of his machine and warns about possible errors.
+    - A character that accompanies the player during level solving. It provides useful hints, informs the player about the correctness of their machine and warns about possible errors.
 - Player character:
     - The player controls this character and interacts with the game environment. The character has animations of movement to the right, to the left, and standing still. 
 - Circle generator:
@@ -62,7 +62,7 @@ After starting the game, the main menu is displayed. The player can choose from 
 - Button:
     - After pressing the button, the process of checking the player's automaton is started. The helper then announces whether the player's automaton is correct or incorrect.
 - Circle Remover:
-    - When a player steps on the circle remover, the circle they are holding is removed.
+    - When the player steps on the circle remover, the circle they are holding is removed.
 
 <img width="630" height="350.4" alt="level_ui_elements" src="https://github.com/user-attachments/assets/acd5feea-2a11-461f-99c6-4a9cf1b083bf" />
 
